@@ -122,7 +122,7 @@ class _DashboardState extends State<Dashboard> {
               children: [
                 Expanded(child: SizedBox(
                   height: 200,
-                  child: Card(child: Padding(
+                  child: Card(color: const Color(0xffD5EAE3),child: Padding(
                     padding: const EdgeInsets.all(15.0),
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
@@ -144,7 +144,7 @@ class _DashboardState extends State<Dashboard> {
                 )),
                 Expanded(child: SizedBox(
                   height: 200,
-                  child: Card(child: Padding(
+                  child: Card(color: const Color(0xffE5E4F9),child: Padding(
                     padding: const EdgeInsets.all(15.0),
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
@@ -166,7 +166,7 @@ class _DashboardState extends State<Dashboard> {
                 )),
                 Expanded(child: SizedBox(
                   height: 200,
-                  child: Card(child: Padding(
+                  child: Card(color: const Color(0xffFDE9D0),child: Padding(
                     padding: const EdgeInsets.all(15.0),
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
