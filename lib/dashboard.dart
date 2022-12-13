@@ -50,7 +50,7 @@ class _DashboardState extends State<Dashboard> {
                          Expanded(child: TextField(decoration: InputDecoration(
                           filled: true,
                           fillColor: Colors.black12,
-                          contentPadding: EdgeInsets.zero,
+                          contentPadding: const EdgeInsets.symmetric(horizontal: 15),
                           border: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(35),
                             borderSide: BorderSide.none
