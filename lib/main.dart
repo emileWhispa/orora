@@ -30,6 +30,12 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.green,
         primaryColor: primaryColor,
+        appBarTheme: const AppBarTheme(
+          backgroundColor: Colors.white,
+          elevation: 1.0,
+          titleTextStyle: TextStyle(color: Colors.black87),
+          iconTheme: IconThemeData(color: Colors.black87)
+        ),
         elevatedButtonTheme: ElevatedButtonThemeData(
           style: ButtonStyle(
             backgroundColor: MaterialStateProperty.all(primaryColor),

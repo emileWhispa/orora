@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:orora/account_screen.dart';
 import 'package:orora/dashboard.dart';
+import 'package:orora/finance_dashboard.dart';
 
 
 class Homepage extends StatefulWidget{
@@ -21,7 +22,7 @@ class _HomepageState extends State<Homepage> {
         index: _index,
         children: const [
           Dashboard(),
-          Center(),
+          FinanceDashboard(),
           ProfileScreen(),
         ],
       ),
@@ -34,7 +35,7 @@ class _HomepageState extends State<Homepage> {
         currentIndex: _index,
         items: const [
           BottomNavigationBarItem(icon: Icon(Icons.home),label: "Home"),
-          BottomNavigationBarItem(icon: Icon(Icons.notifications),label: "Notifications"),
+          BottomNavigationBarItem(icon: Icon(Icons.insert_chart_outlined),label: "Finances"),
           BottomNavigationBarItem(icon: Icon(Icons.settings),label: "Account"),
         ],
       ),

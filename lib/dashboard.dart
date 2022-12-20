@@ -1,4 +1,6 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:orora/farm_list_screen.dart';
 import 'package:orora/line_chart.dart';
 
 class Dashboard extends StatefulWidget{
@@ -122,25 +124,30 @@ class _DashboardState extends State<Dashboard> {
               children: [
                 Expanded(child: SizedBox(
                   height: 200,
-                  child: Card(color: const Color(0xffD5EAE3),shape: RoundedRectangleBorder(
+                  child: Card(clipBehavior: Clip.antiAliasWithSaveLayer,color: const Color(0xffD5EAE3),shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(10)
-                  ),child: Padding(
-                    padding: const EdgeInsets.all(15.0),
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        const Text("My Farms",style: TextStyle(
-                          fontSize: 14
-                        ),textAlign: TextAlign.center,),
-                        const Padding(
-                          padding: EdgeInsets.all(8.0),
-                          child: Text("3",style: TextStyle(
-                              fontSize: 40,
-                            fontWeight: FontWeight.w700
-                          ),),
-                        ),
-                        Image.asset("assets/cow.png")
-                      ],
+                  ),child: InkWell(
+                    onTap: (){
+                      Navigator.push(context, CupertinoPageRoute(builder: (context)=>const FarmListScreen()));
+                    },
+                    child: Padding(
+                      padding: const EdgeInsets.all(15.0),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          const Text("My Farms",style: TextStyle(
+                            fontSize: 14
+                          ),textAlign: TextAlign.center,),
+                          const Padding(
+                            padding: EdgeInsets.all(8.0),
+                            child: Text("3",style: TextStyle(
+                                fontSize: 40,
+                              fontWeight: FontWeight.w700
+                            ),),
+                          ),
+                          Image.asset("assets/cow.png")
+                        ],
+                      ),
                     ),
                   ),),
                 )),
